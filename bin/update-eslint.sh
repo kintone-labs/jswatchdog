@@ -2,7 +2,7 @@
 
 set -eux
 
-BASEDIR=$(cd $(dirname $0); pwd)
+BASEDIR=$(cd $(dirname $0)/..; pwd)
 
 cd $BASEDIR;
 git clone https://github.com/eslint/eslint.git

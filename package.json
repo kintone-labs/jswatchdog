@@ -14,7 +14,7 @@
   },
   "scripts": {
     "build": "gulp build",
-    "update-eslint": "./update-eslint.sh",
+    "update-eslint": "./bin/update-eslint.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

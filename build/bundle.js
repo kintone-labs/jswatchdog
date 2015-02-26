@@ -62,7 +62,7 @@ function doEslint(src) {
 
 function jsprime(src) {
   var iframe = document.createElement('iframe');
-  iframe.src = 'jsprime.html';
+  iframe.src = 'html/jsprime.html';
   document.body.appendChild(iframe);
   return new Promise(function(resolve, reject) {
     iframe.onload = function() {
