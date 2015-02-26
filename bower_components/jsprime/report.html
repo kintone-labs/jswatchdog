@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<!--
+JSPrime v0.1 beta
+=================
+The MIT License (MIT)
+
+Copyright (c) 2013 Nishant Das Patnaik (nishant.dp@gmail.com)
+Copyright (c) 2013 Sarathi Sabyasachi Sahoo (sarathisahoo@gmail.com)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   
+   <meta charset="utf-8">
+
+   <title>JSPrime Scan Report</title>
+   <link href="scripts/lib/report/1.css" media="all" rel="stylesheet">
+   <link href="scripts/lib/report/2.css" media="all" rel="stylesheet">
+   <link rel="stylesheet" href="scripts/lib/custom.css">
+</head>
+
+<body>
+   <header>
+   	<div id="logo"><img src="resources/jsp_logo.png"></div>
+   </header>
+   <div id="title">static <b>javascript</b> analyzer</div>
+   <div id="output">
+      <div class="report" data-validateurl="" id="addon-validator-suite">
+         <div class="results">
+            <div class="result" id="suite-results-tier-3" style="">
+               <div class="result-header">
+                  <ul class="result-nav">
+                     <li><a href="">Prev</a></li>
+                     <li><a href="">Top</a></li>
+                     <li><a href="">Next</a></li>
+                  </ul>
+                  <h4 id="extension-tests">Scan Report</h4>
+                  <div class="result-summary" style="visibility: visible;">
+                     0 confirmed, 5 potential
+                  </div>
+               </div>
+               <div class="tier-results tests-passed-warnings" data-tier="3" id="resultRows">
+			   
+                  <div class="msg msg-warning" id="">
+                     <h5>Global variable overwrite</h5>
+                     <p>Warning: An attempt was made to overwrite a global
+                     variable in some JavaScript code.</p>
+                     <div class="context">
+                        <div class="file">
+                           src/view/process.js
+                        </div>
+                        <div class="code">
+                           <div class="lines">
+                              <div>1</div>
+                              <div>2</div>
+                           </div>
+                           <div class="inner-code">
+                              <div>
+                                 window.onscroll = function (e) {
+                              </div>
+                              <div>
+                                 &nbsp;&nbsp;getheight();
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body></html>

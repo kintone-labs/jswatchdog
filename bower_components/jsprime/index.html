@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<!--
+JSPrime v0.1 beta
+=================
+The MIT License (MIT)
+
+Copyright (c) 2013 Nishant Das Patnaik (nishant.dp@gmail.com)
+Copyright (c) 2013 Sarathi Sabyasachi Sahoo (sarathisahoo@gmail.com)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>.:JSPrime:. v0.1 beta</title>
+  <script src="scripts/lib/codemirror.js"></script>
+  <script src="scripts/addon/edit/matchbrackets.js"></script>
+  <script src="scripts/addon/edit/continuecomment.js"></script>
+  <script src="scripts/addon/comment/comment.js"></script>
+  <script src="scripts/mode/javascript/javascript.js"></script>
+  <script src="scripts/beautify/beautify.js"></script>
+  <script src="esprima.js"></script>
+  <script src="engine.js"></script>
+  <script src="analyzer.js"></script>
+  <link rel="stylesheet" href="scripts/doc/docs.css">
+  <link rel="stylesheet" href="scripts/lib/codemirror.css">
+  <link rel="stylesheet" href="scripts/lib/custom.css">
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+     <div id="logo">
+      <img src="resources/jsp_logo.png">
+     </div>
+    </header>
+    <div id="scriptBox">
+      <div id="title">static <b>javascript</b> analyzer</div>
+       <div><textarea id="code" name="code" style="display: none;"></textarea></div>
+        <div>
+         <p>
+            <table><tr>
+            <td><a class="buttons" onclick="getEditorValue()">Analyze</a></td>
+            <td><a class="buttons" onclick="beautify_editor()">Beautify</a></td>
+            </tr></table>
+         </p>
+        </div>
+    </div>
+  </div>
+  <script>
+    var editorValue = "";
+    editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+     lineNumbers: true,
+     matchBrackets: true,
+     continueComments: "Enter",
+     extraKeys: {
+      "Ctrl-Q": "toggleComment"
+     }
+    });
+
+    function getEditorValue() {
+     editorValue = editor.getValue();
+     analyze();
+    }
+    
+    function beautify_editor() {
+    var pretty_js = js_beautify(editor.getValue(),{
+     'indent_size': 1
+    });
+    editor.setValue(pretty_js);
+    }
+  </script>
+</body>
+</html>

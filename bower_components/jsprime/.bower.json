@@ -1,0 +1,14 @@
+{
+  "name": "jsprime",
+  "homepage": "https://github.com/dpnishant/jsprime",
+  "_release": "ef77d9bc74",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "ef77d9bc74838b591e3d534bfcd9ebbd6724e51c"
+  },
+  "_source": "git://github.com/dpnishant/jsprime.git",
+  "_target": "*",
+  "_originalSource": "dpnishant/jsprime",
+  "_direct": true
+}

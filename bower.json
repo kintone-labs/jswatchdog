@@ -1,0 +1,19 @@
+{
+  "name": "jswatchdog",
+  "version": "1.0.0",
+  "authors": [
+    "ama-ch <amach97@gmail.com>"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jsprime": "dpnishant/jsprime",
+    "ace-builds": "~1.1.8"
+  }
+}

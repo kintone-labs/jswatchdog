@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>jswatchdog</title>
+
+<style>
+html, body {
+  height: 100%;
+}
+
+a {
+  color: #07c;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+main > div {
+  width: calc(50% - .5em);
+  display: flex;
+  flex-direction: column;
+}
+
+.io {
+  position: relative;
+  resize: none;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid;
+  padding: .5em;
+}
+
+.io textarea {
+  flex-grow: 1;
+  resize: none;
+  padding: .5em .8em;
+  font-family: Consolas, monospace;
+}
+
+.part1 .io {
+  border-color: #206694;
+}
+
+.part2 .io {
+  border-color: #357064;
+}
+
+#input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#output {
+  overflow: auto;
+}
+
+.error {
+  color: #a94442;
+}
+
+.warning {
+  color: #f0ad4e;
+}
+
+iframe {
+  display: none;
+}
+
+.lgtm {
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+  border-radius: 3px;
+  color: #468847;
+  padding: 15px;
+  font-weight: bold;
+}
+
+</style>
+</head>
+<body>
+  <main>
+    <div class="part1">
+      <h2>
+        Enter your JS code here
+      </h2>
+      <div class="io">
+        <div id="input">(function() {
+    'use strict';
+
+    kintone.events.on('app.record.index.show', function(evt) {
+        var unusedVar = undefinedVar;
+        var button = document.createElement('button')
+        button.innerHTML = kintone.app.record.get().record['hoge'].value;
+    });
+
+})();
+</div>
+      </div>
+    </div>
+    <div class="part2">
+      <h2>
+        Review result
+      </h2>
+      <div class="io">
+        <div id="output"></div>
+      </div>
+    </div>
+  </main>
+  <script src="vendor/eslint.js"></script><!-- TODO browserifyとかでやりたい -->
+  <script src="bower_components/ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+  <script src="build/bundle.js"></script>
+</body>
+</html>
