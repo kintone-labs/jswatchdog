@@ -313,6 +313,7 @@ module.exports = {
   maxstatements: 50,
   maxcomplexity: 30,
   maxlen: 120,
+  singleGroups: false,
   undef: false,
   unused: false,
 
