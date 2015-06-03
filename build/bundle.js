@@ -136,7 +136,10 @@ module.exports = {
     "$": false,
     "jQuery": false,
     "kintone": false,
-    "moment": false
+    "moment": false,
+    "Handsontable": false,
+    "hljs": false,
+    "marked": false
   },
 
   "rules": {
