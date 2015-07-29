@@ -15,7 +15,9 @@ module.exports = {
     "moment": false,
     "Handsontable": false,
     "hljs": false,
-    "marked": false
+    "marked": false,
+    "sweetAlert": false,
+    "swal": false
   },
 
   "rules": {
