@@ -4,10 +4,10 @@
   "description": "Auto review tool for kintone JS customization.",
   "dependencies": {
     "jshint": "^2.8.0",
-    "lodash": "^3.9.3"
+    "lodash": "^3.10.0"
   },
   "devDependencies": {
-    "browserify": "^10.2.3",
+    "browserify": "^11.0.0",
     "gulp": "^3.9.0",
     "gulp-bower": "0.0.10",
     "vinyl-source-stream": "^1.1.0"
