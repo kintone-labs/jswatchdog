@@ -17,7 +17,8 @@ module.exports = {
     "hljs": false,
     "marked": false,
     "sweetAlert": false,
-    "swal": false
+    "swal": false,
+    "Chart": false
   },
 
   "rules": {
