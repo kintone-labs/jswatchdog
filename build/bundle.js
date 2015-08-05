@@ -62,7 +62,7 @@ module.exports = {
     "no-inline-comments": 0,
     "no-inner-declarations": [2, "functions"],
     "no-invalid-regexp": 2,
-    "no-invalid-this": 2,
+    "no-invalid-this": 0,
     "no-irregular-whitespace": 2,
     "no-iterator": 2,
     "no-label-var": 2,
