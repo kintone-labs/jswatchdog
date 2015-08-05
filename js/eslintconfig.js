@@ -18,7 +18,8 @@ module.exports = {
     "marked": false,
     "sweetAlert": false,
     "swal": false,
-    "Chart": false
+    "Chart": false,
+    "DOMPurify": false
   },
 
   "rules": {
