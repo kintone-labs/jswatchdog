@@ -94,7 +94,6 @@ module.exports = {
     "no-proto": 2,
     "no-redeclare": 2,
     "no-regex-spaces": 2,
-    "no-reserved-keys": 2,
     "no-restricted-modules": 0,
     "no-return-assign": 2,
     "no-script-url": 2,
@@ -153,7 +152,7 @@ module.exports = {
     "guard-for-in": 0,
     "handle-callback-err": 0,
     "id-length": 0,
-    "indent": [2, 4, {indentSwitchCase: true}],
+    "indent": [2, 4, {"SwitchCase": true}],
     "init-declarations": 0,
     "key-spacing": [2, { "beforeColon": false, "afterColon": true }],
     "lines-around-comment": 0,
@@ -177,6 +176,7 @@ module.exports = {
     "quote-props": 0,
     "quotes": [0, "double"],
     "radix": 2,
+    "id-match": 0,
     "require-yield": 0,
     "semi": 2,
     "semi-spacing": [2, {"before": false, "after": true}],
@@ -23789,7 +23789,7 @@ exports.jasmine = {
 (function (global){
 /**
  * @license
- * lodash 3.10.0 (Custom Build) <https://lodash.com/>
+ * lodash 3.10.1 (Custom Build) <https://lodash.com/>
  * Build: `lodash modern -d -o ./index.js`
  * Copyright 2012-2015 The Dojo Foundation <http://dojofoundation.org/>
  * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
@@ -23802,7 +23802,7 @@ exports.jasmine = {
   var undefined;
 
   /** Used as the semantic version number. */
-  var VERSION = '3.10.0';
+  var VERSION = '3.10.1';
 
   /** Used to compose bitmasks for wrapper metadata. */
   var BIND_FLAG = 1,
