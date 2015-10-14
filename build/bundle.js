@@ -20,7 +20,8 @@ module.exports = {
     "sweetAlert": false,
     "swal": false,
     "Chart": false,
-    "DOMPurify": false
+    "DOMPurify": false,
+    "Spinner": false
   },
 
   "rules": {
