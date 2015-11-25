@@ -210,6 +210,7 @@ module.exports = {
   bitwise: false,
   camelcase: false,
   eqeqeq: false,
+  es3: false,
   immed: false,
   noarg: false,
   nocomma: false, // Confusing behavior
