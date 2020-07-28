@@ -4,7 +4,7 @@ Auto review tool for kintone JS customization.
 ## How to use
 
 1. Open below link in browser.  
-https://kintone.github.io/jswatchdog/
+https://kintone-labs.github.io/jswatchdog/
 2. Paste your kintone JS customization file to the left pane.
 3. Confirm review result in the right pane.
 4. Fix your code as necessary.
